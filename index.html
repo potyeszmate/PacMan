@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+	<link rel="icon" type="image/png" sizes="64x64" href="pac.png">
+    <title>Pac-man</title>
+    <script src="jquery-3.5.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body>
+
+
+  <audio src="audio/eating.short.mp3" id="megeves"></audio>
+  <audio src="audio/eatghost.mp3" id="szornyeves"></audio>
+  <audio src="audio/die.mp3" id="die"></audio>
+  <audio src="audio/extra_lives.mp3" id="power"></audio>
+  <audio src="audio/intermission.mp3"  id="win"></audio>
+  <audio src="audio/opening_song.mp3" id="sound" loop="loop"> </audio>
+
+
+
+  <div class="Felso">
+    <h3>Pontok:<span id="score"></span><span id="new">Uj jatek: <a href="index.html"> <button class="btn btn1">Kattints ide</button></a>
+      <input type="image" class="speaker" src="speaker-512.png" width="45" onclick="playSound('sound')">
+</span></h3>
+
+  </div>
+
+
+  <div class="grid"></div>
+
+  <div class="Alsó">
+    <h3>Elet: <span id="lives"></span></h3>
+  </div>
+
+
+
+  <table>
+    <tr>
+      <th class="Infok"><p>Infók</p></th>
+    </tr>
+    <tr>
+      <td><p>Irányítás: Nyilakkal</p></td>
+    </tr>
+    <tr>
+    <td><p>Ha 300 pontot elértél,</p><p>megnyerted a játékot </p></td>
+  </tr>
+    <tr>
+      <td><p>Sima golyó:1 pont <p>Energia golyó: 10 pont</p> </p><p>Szörnyek megevése: 30 pont</p></td>
+    </tr>
+    <tr>
+      <td><p>Kezdéskor egy ellenfél a pálya </p> <p> tetejéről indul. A többi ellenfél </p> <p> egymás után jön ki a helyéről,</p><p> bizonyos időközönként.</p></td>    </tr>
+    <tr>
+      <td><p>Ha 3-szor elkapnak az ellenfelek,</p> <p>a játéknak vége</p></td>    </tr>
+
+  </table>
+
+
+
+  <div id="top_list">
+      <h3 style="padding-bottom: 5px; padding-right:50px; color: black">10-es toplista</h3>
+      <p id="list"></p>
+    </div>
+
+
+  </body>
+
+</html>
